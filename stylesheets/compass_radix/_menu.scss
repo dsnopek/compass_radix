@@ -132,10 +132,12 @@
           display: block;
           padding: 9px 15px;
           font-weight: bold;
-          color: #777777;
+          color: $navbarLinkColor;
           @include border-radius(3px);
           &:hover {
-            background-color: #f2f2f2;
+            color: $navbarLinkColorHover;
+            text-decoration: none;
+            background-color: $navbarLinkBackgroundHover;
           }
         }
         &.open {
