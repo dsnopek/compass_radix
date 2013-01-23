@@ -20,4 +20,5 @@ Gem::Specification.new do |s|
   # Gem Bookkeeping
   s.rubygems_version = %q{0.0.1}
   s.add_dependency("compass", [">= 0.11"])
+  s.add_dependency("compass_twitter_bootstrap", [">= 2.2.2.1"])
 end
