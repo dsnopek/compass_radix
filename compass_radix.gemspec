@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.name = "compass_radix"
   s.authors = ["Arshad Chummun"]
   s.summary = %q{a compass extension for the Drupal Radix theme}
-  s.description = %q{a compass extension for the Drupal Radix theme}
+  s.description = %q{A compass extension for the Drupal Radix theme. See http://drupal.org/project/radix}
   s.email = "arshad@chummun.com"
   s.homepage = "http://arshad.github.com/"
 
