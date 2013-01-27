@@ -27,55 +27,6 @@ form {
   }
 }
 
-@media (max-width: 767px) { 
-  form {
-    .btn {
-      width: 100%;
-      display: block;
-      clear: both;
-      margin: 0 0 5px;
-    }
-    input.form-text,
-    textarea,
-    select {
-      width: 94%;
-    }
-    fieldset {
-      legend {
-        font-size: 18px;
-        line-height: 24px;
-        padding-bottom: 5px;
-        margin-top: 10px;
-      }
-    }
-    .confirm-parent, 
-    .password-parent, 
-    .password-suggestions {
-      width: auto !important;
-    }
-    .password-parent {
-      div.password-strength {
-        width: 150px;
-        float: right;
-        margin-top: 0;
-        font-size: 10px;
-        margin-bottom: 5px;
-        margin-top: -5px;
-      }
-    }
-    .confirm-parent {
-      div.password-confirm {
-        width: 110px;
-        float: right;
-        margin-top: 0;
-        font-size: 10px;
-        margin-bottom: 5px;
-        margin-top: -5px;
-      }
-    }
-  }
-}
-
 // Node Edit Form
 // --------------------------------------------------
 #node-edit {
@@ -131,32 +82,6 @@ form {
     input {
       &.form-submit {
         display: none;
-      }
-    }
-  }
-}
-
-@media (max-width: 979px) {
-  .navbar {
-    .search-form {
-      border: 0 !important;
-      padding: 5px 0 10px;
-      margin: 0;
-      @include box-shadow(none);
-      .container-inline {
-        padding-top: 0;
-        margin: 0;
-        display: block;
-        width: 100%;
-        .form-item {
-          width: 100%;
-          display: block;
-        }
-      }
-      input {
-        margin: 0 auto;
-        display: block;
-        width: 85%;
       }
     }
   }

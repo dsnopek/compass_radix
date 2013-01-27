@@ -1,0 +1,39 @@
+// Menu
+// Styles for Menus and Navs
+// --------------------------------------------------
+@media (max-width: 979px) {
+  #main-menu {
+    float: none;
+    > ul.menu {
+      li {
+        display: block;
+        float: none;
+        margin-bottom: 2px;
+        a {
+          display: block;
+          padding: 9px 15px;
+          font-weight: bold;
+          color: $navbarLinkColor;
+          @include border-radius(3px);
+          &:hover {
+            color: $navbarLinkColorHover;
+            text-decoration: none;
+            background-color: $navbarLinkBackgroundHover;
+          }
+        }
+        &.open {
+          ul.menu {
+            display: none !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 980px) {
+  .nav-collapse.collapse {
+    height: auto !important;
+    overflow: visible !important;
+  }
+}
