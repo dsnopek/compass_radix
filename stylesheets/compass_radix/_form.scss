@@ -27,6 +27,53 @@ form {
   }
 }
 
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0;
+}
+
+.form-type-radio .description, 
+.form-type-checkbox .description {
+  margin-left: 0;
+}
+
+form {
+  .field-multiple-table {
+    thead {
+      th {
+        padding: 10px !important;
+        label {
+          margin: 0;
+          font-weight: bold;
+        }
+      }
+    }
+  } 
+  .description {
+    margin: 2px 0;
+    color: $gray;
+  }
+}
+
+select[multiple], 
+select[size] {
+  height: 30px;
+}
+
+.media-widget {
+  > a {
+    margin: 0 10px 0 0;
+    @include btn();
+  }
+}
+
+html.js input.form-autocomplete {
+  background: image-url("throbber.gif") no-repeat right 8px #fff !important;
+}
+html.js input.throbbing {
+  background-position: right -122px !important;
+}
+
 // Node Edit Form
 // --------------------------------------------------
 #node-edit {
