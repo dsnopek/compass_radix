@@ -126,7 +126,6 @@
   background-color: #fff;
   margin: 0 0 30px;
   @include border-radius(6px);
-  @include box-shadow(0 1px 4px rgba(0, 0, 0, 0.065));
   .pane-title {
     padding: 8px 14px;
     margin: 0 0 -1px;
@@ -152,9 +151,9 @@
         }
         &.active-trail {
           > a {
-            color: #ffffff;
+            color: $white;
             text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
-            background-color: #0088cc;
+            background-color: $linkColor;
           }
           > ul.menu {
             display: block;
@@ -165,7 +164,7 @@
               &.active-trail {
                 > a {
                   background-color: #F5F5F5;
-                  color: #0088CC;
+                  color: $linkColor;
                   text-shadow: none;
                 }
               }
