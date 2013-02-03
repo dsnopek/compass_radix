@@ -140,6 +140,12 @@
             background-color: $navbarInverseLinkBackgroundActive;
           }
         }
+        &.open {
+          > a {
+            background-color: $navbarInverseLinkBackgroundActive;
+            color: $navbarInverseLinkColorActive;
+          }
+        }
       }
     }
   }
@@ -168,15 +174,13 @@
     > li {
       float: left;
       list-style: none outside none;
-      margin: 0 0 10px;
+      margin: 0 0 20px;
       padding: 0;
       width: 20%;
       > a,
       > span {
         font-size: 1.0em;
         font-weight: 700;
-        margin-right: 35px;
-        text-align: right;
         text-transform: uppercase;
       }
       > ul.menu {

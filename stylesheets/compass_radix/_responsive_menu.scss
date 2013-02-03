@@ -1,6 +1,9 @@
 // Menu
 // Styles for Menus and Navs
 // --------------------------------------------------
+
+// Main Menu
+// --------------------------------------------------
 @media (max-width: 979px) {
   #main-menu {
     float: none;
@@ -35,5 +38,38 @@
   .nav-collapse.collapse {
     height: auto !important;
     overflow: visible !important;
+  }
+}
+
+// Footer Menu
+// --------------------------------------------------
+
+// Mobile
+@media (max-width: 767px) {
+  #footer-menu {
+    > ul.menu {
+      > li {
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin: 0 0 30px;
+        padding: 0;
+        > a {
+          text-align: center;
+          display: block;
+          margin-bottom: 10px;
+        }
+        > ul.menu {
+          > li {
+            margin: 0;
+            padding: 0;
+            > a {
+              text-align: center;
+              display: block;
+            }
+          }
+        }
+      }
+    }
   }
 }
