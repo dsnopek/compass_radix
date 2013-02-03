@@ -108,8 +108,9 @@
       }
       &.open {
         > a {
-          color: #555;
-          background-color: #E5E5E5;
+          color: $navbarLinkColorHover;
+          text-decoration: none;
+          background-color: $navbarLinkBackgroundHover;
         }
         ul.menu {
           display: block;
@@ -153,61 +154,42 @@
   }
 }
 
-// Pane Menu Tree
+// Footer Menu
 // --------------------------------------------------
-.pane-menu-tree {  
-  padding: 0;
-  background-color: #fff;
-  margin: 0 0 30px;
-  @include border-radius(6px);
-  .pane-title {
-    padding: 8px 14px;
-    margin: 0 0 -1px;
-    border: 1px solid #e5e5e5;
-  }
-  .pane-content {
-    ul.menu {
-      margin: 0;
+#footer-menu {
+  background-color: $grayLighter;
+  @include border-radius(4px);
+  margin: 0 0 20px;
+  padding: 20px;
+  > ul.menu {
+    margin: 0;
+    padding: 0;
+    @include clearfix();
+    > li {
+      float: left;
+      list-style: none outside none;
+      margin: 0 0 10px;
       padding: 0;
-      li {
-        list-style: none outside none;
+      width: 20%;
+      > a,
+      > span {
+        font-size: 1.0em;
+        font-weight: 700;
+        margin-right: 35px;
+        text-align: right;
+        text-transform: uppercase;
+      }
+      > ul.menu {
         margin: 0;
         padding: 0;
-        a {
-          display: block;
-          margin: 0 0 -1px;
-          padding: 8px 14px;
-          border: 1px solid #e5e5e5;
-          &:hover {
-            background-color: #f5f5f5;
-            text-decoration: none;
+        > li {
+          list-style: none outside none;
+          margin: 0 5px 0 0;
+          > a,
+          > span {
+            font-size: 0.90em;
           }
         }
-        &.active-trail {
-          > a {
-            color: $white;
-            text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
-            background-color: $linkColor;
-          }
-          > ul.menu {
-            display: block;
-            li {
-              a {
-                padding-left: 30px;
-              }
-              &.active-trail {
-                > a {
-                  background-color: #F5F5F5;
-                  color: $linkColor;
-                  text-shadow: none;
-                }
-              }
-            }
-          }
-        }
-      }
-      ul.menu {
-        display: none;
       }
     }
   }
