@@ -51,3 +51,12 @@
     border: none;
   }
 }
+
+.content {
+  ul, ol {
+    list-style: inherit;
+  }
+  ol {
+    list-style: decimal;
+  }
+}
