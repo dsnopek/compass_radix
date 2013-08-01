@@ -297,3 +297,8 @@ ul.links {
   display: table;
   margin: 0 auto;
 }
+
+ul.nav,
+ul.navl li {
+  list-style: none outside none !important;
+}
