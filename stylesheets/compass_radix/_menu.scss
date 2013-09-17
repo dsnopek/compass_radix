@@ -11,6 +11,18 @@
       line-height: 1.1em;
     }
   }
+  .btn-navbar {
+    padding: 4px 10px;
+    width: 15px;
+    .icon-bar {
+      &:first-child {
+        margin-top: 4px;
+      }
+      &:last-child {
+        margin-bottom: 4px;
+      }
+    }
+  }
 }
 
 // Nav
