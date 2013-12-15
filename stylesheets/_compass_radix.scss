@@ -13,10 +13,10 @@
 @import "compass_radix/variable";
 @import "compass_radix/mixin";
 
-// Compass plugin for Twitter Bootstrap
-// @see https://github.com/vwall/compass-twitter-bootstrap
+// Bootstrap Sass version
+// @see https://github.com/thomas-mcdonald/bootstrap-sass
 // --------------------------------------------------
-@import "compass_twitter_bootstrap";
+@import "bootstrap";
 @import "fontawesome/font-awesome";
 
 // Radix Theme CSS
