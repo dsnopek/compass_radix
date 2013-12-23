@@ -70,12 +70,12 @@ div.vertical-tabs {
         outline: none !important;
         @include border-radius(4px 0 0 4px);
         &:hover {
-          color: $white;
-          background: $linkColor;
+          color: #fff;
+          background: $link-color;
           text-decoration: none;
           strong {
             text-decoration: none;
-            color: $white;
+            color: #fff;
           }
         }
       }
@@ -96,15 +96,15 @@ div.vertical-tabs {
 // --------------------------------------------------
 table {
   width: 100%;
-  margin-bottom: $baseLineHeight;
+  margin-bottom: $line-height-base;
   // Cells
   th,
   td {
     padding: 8px;
-    line-height: $baseLineHeight;
+    line-height: $line-height-base;
     text-align: left;
     vertical-align: top;
-    border-top: 1px solid $tableBorder;
+    border-top: 1px solid $table-border-color;
     &.checkbox {
       text-align: center;
       input {
@@ -131,7 +131,7 @@ table {
   }
   // Account for multiple tbody instances
   tbody + tbody {
-    border-top: 2px solid $tableBorder;
+    border-top: 2px solid $table-border-color;
   }
 }
 
@@ -144,6 +144,15 @@ ul.links {
       margin: 0 10px 0 0;
       padding: 0;
     }
+  }
+}
+
+// Contextual Links
+// --------------------------------------------------
+#content {
+  > .contextual-links-region {
+    display: table;
+    margin: 0 auto;
   }
 }
 
@@ -170,7 +179,7 @@ ul.links {
         bottom: 0;
         left: 0;
         width: 100%;
-        color: $white;
+        color: #fff;
         .field-slideshow-caption-text {
           display: block;
           padding: 20px;
@@ -193,7 +202,7 @@ ul.links {
       font-size: 60px;
       font-weight: 100;
       line-height: 30px;
-      color: $white;
+      color: #fff;
       text-align: center;
       background: #222222;
       border: 3px solid #ffffff;
@@ -205,7 +214,7 @@ ul.links {
         left: auto;
       }
       &:hover {
-        color: $white;
+        color: #fff;
         text-decoration: none;
         @include opacity(0.9);
       }
@@ -226,17 +235,17 @@ ul.links {
       width: 25px;
       height: 25px;
       line-height: 25px;
-      color: $white;
+      color: #fff;
       text-decoration: none;
       @include border-radius(25px);
       @include opacity(0.5);
       &:hover {
-        color: $white;
+        color: #fff;
         text-decoration: none;
         @include opacity(0.9);
       }
       &.activeSlide {
-        background: $linkColor;
+        background: $link-color;
         @include opacity(0.9);
       }
     }
@@ -260,7 +269,7 @@ ul.links {
     .filled {
       height: 40px;
       @include border-radius(4px);
-      @include gradient-striped($linkColor);
+      @include gradient-striped($link-color);
       @include background-size(40px 40px);
       @include box-shadow(inset 0 -1px 0 rgba(0,0,0,.15));
       @include box-sizing(border-box);
@@ -270,6 +279,17 @@ ul.links {
           -ms-animation: progress-bar-stripes 2s linear infinite;
            -o-animation: progress-bar-stripes 2s linear infinite;
               animation: progress-bar-stripes 2s linear infinite;
+    }
+  }
+}
+
+// Pager
+// --------------------------------------------------
+.item-list {
+  ul.pagination {
+    margin: 20px 0;
+    > li {
+      margin: 0;
     }
   }
 }

@@ -9,7 +9,7 @@ form {
   fieldset {
     min-height: 50px;
     legend {
-      font-size: 18px;
+      margin: auto;
     }
   }
   .form-actions {
@@ -27,9 +27,11 @@ form {
   }
 }
 
-input[type="radio"],
-input[type="checkbox"] {
-  margin: 0;
+.radio input[type="radio"], 
+.radio-inline input[type="radio"], 
+.checkbox input[type="checkbox"], 
+.checkbox-inline input[type="checkbox"] {
+  margin-top: 4px;
 }
 
 .form-type-radio .description, 
@@ -110,6 +112,9 @@ html.js input.throbbing {
       }
     }
   }
+  .pane-node-form-buttons {
+    clear: both;
+  }
 }
 
 .filter-wrapper {
@@ -123,46 +128,6 @@ html.js input.throbbing {
     padding: 0;
     .tips {
       margin-left: 0;
-    }
-  }
-}
-
-// Search Form
-// --------------------------------------------------
-.navbar {
-  .search-form {
-    .container-inline {
-      padding-top: 0;
-    }
-    input {
-      &.form-submit {
-        display: none;
-      }
-    }
-  }
-}
-
-.navbar-inverse {
-  .search-form {
-    input.search-query {
-      color: $white;
-      background-color: $navbarInverseSearchBackground;
-      border-color: $navbarInverseSearchBorder;
-      @include box-shadow(#{inset 0 1px 2px rgba(0,0,0,.1), 0 1px 0 rgba(255,255,255,.15)});
-      @include transition(none);
-      @include placeholder($navbarInverseSearchPlaceholderColor);
-
-      // Focus states (we use .focused since IE7-8 and down doesn't support :focus)
-      &:focus,
-      &.focused {
-        padding: 5px 15px;
-        color: $grayDark;
-        text-shadow: 0 1px 0 $white;
-        background-color: $navbarInverseSearchBackgroundFocus;
-        border: 0;
-        @include box-shadow(0 0 3px rgba(0,0,0,.15));
-        outline: 0;
-      }
     }
   }
 }
@@ -198,3 +163,15 @@ html.js input.throbbing {
   }
 }
 
+// Panels edit content form.
+// --------------------------------------------------
+#panels-panel-context-edit-move,
+#panels-panel-context-edit-content {
+  .container {
+    width: auto;
+    padding: 0;
+    .row {
+      margin-bottom: 20px;
+    }
+  }
+}
