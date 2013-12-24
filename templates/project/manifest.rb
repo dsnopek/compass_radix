@@ -1,5 +1,4 @@
 stylesheet '_compass_radix.scss', :media => 'screen, projection'
-stylesheet '_compass_radix_responsive.scss', :media => 'screen, projection'
 
 description "A Compass plugin for the Drupal Radix theme"
 
