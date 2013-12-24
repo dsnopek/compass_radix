@@ -7,7 +7,6 @@
 // --------------------------------------------------
 form {
   fieldset {
-    min-height: 50px;
     legend {
       float: left;
       line-height: 1em;
@@ -72,11 +71,6 @@ form {
   }
 }
 
-select[multiple], 
-select[size] {
-  height: 30px;
-}
-
 .media-widget {
   > a {
     margin: 0 10px 0 0;
@@ -84,11 +78,18 @@ select[size] {
   }
 }
 
-html.js input.form-autocomplete {
-  background: image-url("throbber.gif") no-repeat right 8px #fff !important;
-}
-html.js input.throbbing {
-  background-position: right -122px !important;
+html.js {
+  input.form-autocomplete {
+    background: image-url("throbber.gif") no-repeat right 8px #fff !important;
+  }
+  input.throbbing {
+    background-position: right -122px !important;
+  }
+  fieldset.collapsed {
+    height: auto;
+    border-left-width: 1px;
+    border-right-width: 1px;
+  }
 }
 
 .views-exposed-form .views-exposed-widget .form-submit {
