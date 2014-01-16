@@ -29,14 +29,16 @@
 
 // Tabs
 // --------------------------------------------------
-.tabs {
+.tabs, .nav-tabs {
   margin: 0 0 18px;
 }
 
 // Action Links
 // --------------------------------------------------
 .action-links {
+  list-style: none outside none;
   margin: 0 0 18px;
+  padding: 0;
   @include clearfix();
   > li {
     float: left;
@@ -138,6 +140,8 @@ table {
 // Links
 // --------------------------------------------------
 ul.links {
+  padding: 0;
+  list-style: none outside none;
   &.inline {
     margin: 0;
     li {
@@ -290,6 +294,7 @@ ul.links {
     margin: 20px 0;
     > li {
       margin: 0;
+      display: inline-block;
     }
   }
 }
@@ -307,4 +312,22 @@ ul.navl li,
 ul.dropdown-menu,
 ul.dropdown-menu li {
   list-style: none outside none !important;
+}
+
+// Drupal Navbar
+// --------------------------------------------------
+.drupal-navbar .navbar-bar,
+.drupal-navbar .navbar-tray-vertical > .navbar-lining:before,
+.drupal-navbar .navbar-tray-horizontal {
+  @include box-shadow(none);
+}
+.drupal-navbar .navbar-tray-vertical,
+.drupal-navbar .navbar-tray-vertical > .navbar-lining:before {
+  bottom: 0;
+  width: 240px !important;
+}
+@media only screen and (min-width: 38.125em) {
+  body.navbar-tray-open.navbar-vertical {
+    margin-left: 240px !important;
+  }
 }

@@ -41,18 +41,6 @@ form {
   }
 }
 
-.radio input[type="radio"], 
-.radio-inline input[type="radio"], 
-.checkbox input[type="checkbox"], 
-.checkbox-inline input[type="checkbox"] {
-  margin-top: 4px;
-}
-
-.form-type-radio .description, 
-.form-type-checkbox .description {
-  margin-left: 0;
-}
-
 form {
   .field-multiple-table {
     thead {
@@ -107,15 +95,7 @@ html.js {
     input.form-text,
     textarea,
     select {
-      width: 94%;
-    }
-    fieldset {
-      legend {
-        font-size: 18px;
-        line-height: 24px;
-        padding-bottom: 5px;
-        margin-top: 10px;
-      }
+      width: 100%;
     }
     .confirm-parent, 
     .password-parent, 
@@ -237,6 +217,30 @@ html.js {
     padding: 0;
     .row {
       margin-bottom: 20px;
+    }
+  }
+}
+
+// Navbar form
+// --------------------------------------------------
+.navbar-form {
+  .form-wrapper {
+    padding: 0;
+  }
+  .form-submit {
+    display: none;
+  }
+}
+
+// Search form block
+// --------------------------------------------------
+.pane-search-box {
+  form {
+    .form-wrapper {
+      .form-group {
+        display: block;
+        margin-bottom: 10px;
+      }
     }
   }
 }

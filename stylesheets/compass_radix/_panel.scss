@@ -9,10 +9,17 @@
     margin-bottom: 20px;
   }
 }
+.panel-flexible .panel-separator {
+  display: none;
+}
 
 // IPE
 // --------------------------------------------------
-#panels-ipe-control-container {
+div#panels-ipe-control-container {
+  width: auto;
+  left: 0;
+  right: 0;
+  @include box-shadow(none);
   .panels-ipe-button-container {
     text-align: center;
     .panels-ipe-pseudobutton-container {
