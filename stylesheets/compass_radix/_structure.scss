@@ -276,11 +276,7 @@ ul.links {
       @include box-shadow(inset 0 -1px 0 rgba(0,0,0,.15));
       @include box-sizing(border-box);
       @include transition(width .6s ease);
-      -webkit-animation: progress-bar-stripes 2s linear infinite;
-         -moz-animation: progress-bar-stripes 2s linear infinite;
-          -ms-animation: progress-bar-stripes 2s linear infinite;
-           -o-animation: progress-bar-stripes 2s linear infinite;
-              animation: progress-bar-stripes 2s linear infinite;
+      @include animation(progress-bar-stripes 2s linear infinite);
     }
   }
 }
@@ -327,5 +323,24 @@ ul.dropdown-menu li {
 @media only screen and (min-width: 38.125em) {
   body.navbar-tray-open.navbar-vertical {
     margin-left: 240px !important;
+  }
+}
+
+// Navbar Styling for Panopoly.
+// --------------------------------------------------
+a#navbar-link-admin-panopoly {
+  &:before {
+    background-image: url("../images/icon/icon-panopoly.png");
+  }
+  &.active:before {
+    background-image: url("../images/icon/icon-panopoly-active.png");
+  }
+}
+a#navbar-link-admin-apps {
+  &:before {
+    background-image: url("../images/icon/icon-apps.png");
+  }
+  &.active:before {
+    background-image: url("../images/icon/icon-apps-active.png");
   }
 }
