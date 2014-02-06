@@ -7,8 +7,8 @@ For documentation and more see [http://drupal.org/project/radix](http://drupal.o
 
 For Radix 3.x, use compass_radix 3.x.x by running:
 
-    sudo gem install compass_radix -v 3.0.0
+    sudo gem install compass_radix -v 3
 
 For Radix 2.x, use compass_radix 2.0.0 by running:
 
-    sudo gem install compass_radix -v 2.0.0
+    sudo gem install compass_radix -v 2
