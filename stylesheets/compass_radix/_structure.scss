@@ -343,11 +343,14 @@ body.ctools-modal-open {
 }
 #modalContent {
   .modal-content {
+    width: 100%;
+    overflow: hidden;
     @include box-shadow(none !important);
   }
   #modal-content {
     overflow: auto;
     width: 100% !important;
+    background: white;
   }
   .panels-add-content-modal {
     background: none;
@@ -368,6 +371,8 @@ body.ctools-modal-open {
     border-right: 1px solid #ccc;
     height: 100%;
     background: white;
+    overflow: auto;
+    padding-bottom: 20px;
     .btn {
       border: 1px solid $gray-light !important;
       line-height: inherit;
@@ -378,11 +383,16 @@ body.ctools-modal-open {
   .panels-categories-box {
     border: 0;
     a.btn {
-      padding: 10px 15px;
+      padding: 5px 10px;
     }
     a.active {
       background: $gray-lighter;
       @include box-shadow(none);
+    }
+  }
+  .panels-root-content-box {
+    a.btn {
+      padding: 5px 10px;
     }
   }
   .panels-categories-description {

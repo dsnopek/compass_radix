@@ -47,3 +47,14 @@ div#panels-ipe-control-container {
     }
   }
 }
+
+ul.panels-ipe-linkbar {
+  list-style: none outside none;
+  > li {
+    display: inline-block;
+    margin: 0 0 0 5px;
+    a {
+      margin: 0 !important;
+    }
+  }
+}
