@@ -9,6 +9,6 @@ For Radix 3.x, use compass_radix 3.x.x by running:
 
     sudo gem install compass_radix -v 3
 
-For Radix 2.x, use compass_radix 2.0.0 by running:
+For Radix 2.x, use compass_radix 2.x.x by running:
 
     sudo gem install compass_radix -v 2
