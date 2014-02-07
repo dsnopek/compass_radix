@@ -134,43 +134,6 @@ html.js {
   }
 }
 
-// Node Edit Form
-// --------------------------------------------------
-#node-edit {
-  #edit-title {
-    font-size: 1.6em;
-    line-height: 1.6em;
-    height: 45px;
-    width: 90%;
-  }
-  .form-item-path-alias {
-    @include clearfix();
-    label, input {
-      display: inline;
-    }
-  }
-  .burr-flipped-sidebar {
-    .panel-pane {
-      @include well();
-      padding: 10px;
-      .pane-title {
-        margin-top: 0;
-      }
-    }
-    .pane-node-form-buttons {
-      background: none;
-      padding: inherit;
-      .form-actions {
-        margin: 0;
-        border-top: 0;
-      }
-    }
-  }
-  .pane-node-form-buttons {
-    clear: both;
-  }
-}
-
 .filter-wrapper {
   @include well();
   margin-top: 10px;
