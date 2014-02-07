@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   # Release Specific Information
-  s.version = "2.0.0"
-  s.date = "2014-02-06"
+  s.version = "2.0.1"
+  s.date = "2014-02-07"
 
   # Gem Details
   s.name = "compass_radix"
@@ -18,7 +18,7 @@ Gem::Specification.new do |s|
   s.files += Dir.glob("templates/**/*.*")
 
   # Gem Bookkeeping
-  s.rubygems_version = %q{2.0.0}
+  s.rubygems_version = %q{2.0.1}
   s.add_dependency("compass", [">= 0.12.2"])
   s.add_dependency("compass_twitter_bootstrap", [">= 2.3.1"])
 end
