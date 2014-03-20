@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   # Release Specific Information
-  s.version = "3.0.2"
+  s.version = "3.0.3"
   s.date = "2014-02-13"
 
   # Gem Details
@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.summary = %q{a compass extension for the Drupal Radix theme}
   s.description = %q{A compass extension for the Drupal Radix theme. See http://drupal.org/project/radix}
   s.email = "arshad@chummun.com"
-  s.homepage = "http://arshad.github.com/"
+  s.homepage = "http://arshad.github.io/"
 
   # Gem Files
   s.files = %w(README.md)
@@ -18,7 +18,7 @@ Gem::Specification.new do |s|
   s.files += Dir.glob("templates/**/*.*")
 
   # Gem Bookkeeping
-  s.rubygems_version = %q{3.0.2}
+  s.rubygems_version = %q{3.0.3}
   s.add_dependency("compass", [">= 0.12.2"])
   s.add_dependency("bootstrap-sass", [">= 3.0.3.0"])
 end
