@@ -35,7 +35,7 @@ ul.nav {
       color: $text-color;
       &:hover, &:focus, &.active, &.active-trail {
         color: $link-color;
-        background: none !important;
+        background: none;
       }
     }
     ul.dropdown-menu {
@@ -63,6 +63,16 @@ ul.nav {
     @media (max-width: $screen-xs-max) {
       float: none;
       margin-bottom: 18px;
+    }
+    &.open {
+      > a {
+        color: $link-color;
+        background: none;
+        &:hover, &:focus, &.active, &.active-trail {
+          color: $link-color;
+          background: none;
+        }
+      }
     }
   }
 }
