@@ -20,3 +20,49 @@ ul.nav {
     }
   }
 }
+
+// Nav expanded
+// --------------------------------------------------
+.nav-expanded {
+  .caret {
+    display: none;
+  }
+  > li {
+    > a {
+      font-size: 1.2em;
+      text-align: left;
+      font-weight: 700;
+      color: $text-color;
+      &:hover, &:focus, &.active, &.active-trail {
+        color: $link-color;
+        background: none;
+      }
+    }
+    ul.dropdown-menu {
+      background: none;
+      display: block;
+      border: 0;
+      padding: 0;
+      position: static;
+      float: none;
+      @include border-radius(0);
+      @include box-shadow(none);
+      li {
+        a {
+          padding: 3px 15px;
+          &:hover, &:focus, &.active, &.active-trail {
+            color: $link-color;
+            background: none;
+          }
+        }
+      }
+      ul {
+        display: none !important;
+      }
+    }
+    @media (max-width: $screen-xs-max) {
+      float: none;
+      margin-bottom: 18px;
+    }
+  }
+}
