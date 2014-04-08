@@ -34,7 +34,7 @@ ul.nav {
       font-weight: 700;
       color: $text-color;
       &:hover, &:focus, &.active, &.active-trail {
-        color: $link-color;
+        color: $link-hover-color;
         background: none;
       }
     }
@@ -50,8 +50,9 @@ ul.nav {
       li {
         a {
           padding: 3px 15px;
+          color: $text-color;
           &:hover, &:focus, &.active, &.active-trail {
-            color: $link-color;
+            color: $link-hover-color;
             background: none;
           }
         }
@@ -66,10 +67,10 @@ ul.nav {
     }
     &.open {
       > a {
-        color: $link-color;
+        color: $text-color;
         background: none;
         &:hover, &:focus, &.active, &.active-trail {
-          color: $link-color;
+          color: $link-hover-color;
           background: none;
         }
       }
