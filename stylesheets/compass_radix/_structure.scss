@@ -386,6 +386,13 @@ body.ctools-modal-open {
 // --------------------------------------------------
 .calendar-calendar {
   @extend .col-md-12;
+  table.mini {
+    @extend .table-bordered;
+    td {
+      border: 1px solid $gray-lighter !important;
+      padding: 5px;
+    }
+  }
 }
 .view-header {
   .date-nav-wrapper {
