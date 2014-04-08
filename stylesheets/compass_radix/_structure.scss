@@ -381,3 +381,17 @@ body.ctools-modal-open {
     }
   }
 }
+
+// Calendar
+// --------------------------------------------------
+.calendar-calendar {
+  @extend .col-md-12;
+}
+.view-header {
+  .date-nav-wrapper {
+    h3 {
+      margin-top: 5px !important;
+      margin-bottom: 0;
+    }
+  }
+}
