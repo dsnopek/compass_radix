@@ -2,6 +2,7 @@ Gem::Specification.new do |s|
   # Release Specific Information
   s.version = "3.0.7"
   s.date = "2014-06-05"
+  s.licenses    = ['MIT']
 
   # Gem Details
   s.name = "compass_radix"
