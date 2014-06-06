@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   # Release Specific Information
-  s.version = "3.0.8"
-  s.date = "2014-06-05"
+  s.version = "3.0.9"
+  s.date = "2014-06-06"
   s.licenses    = ['MIT']
 
   # Gem Details
@@ -19,7 +19,7 @@ Gem::Specification.new do |s|
   s.files += Dir.glob("templates/**/*.*")
 
   # Gem Bookkeeping
-  s.rubygems_version = %q{3.0.8}
+  s.rubygems_version = %q{3.0.9}
   s.add_dependency("compass", ["~> 0.12"])
   s.add_dependency("bootstrap-sass", ["~> 3.1"])
 end
