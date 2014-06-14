@@ -176,6 +176,19 @@ ul.links {
     > li {
       margin: 0;
       display: inline-block;
+      padding: 0;
+      position: relative;
+      > a, > span {
+        padding: 6px 12px;
+        @include border-radius(inherit);
+        &.progress-disabled {
+          float: left;
+        }
+      }
+      .ajax-progress {
+        float: left;
+        padding: 6px 5px 6px 10px;
+      }
     }
   }
 }
