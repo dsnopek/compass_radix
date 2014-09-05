@@ -11,6 +11,14 @@
 .panel-flexible .panel-separator {
   display: none;
 }
+.view-mode-featured,
+.view-mode-teaser,
+.view-mode-full {
+  .container {
+    width: auto;
+    padding: 0;
+  }
+}
 
 // IPE
 // --------------------------------------------------

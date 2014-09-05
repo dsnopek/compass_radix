@@ -105,9 +105,19 @@ table {
     border-top: 1px solid $table-border-color;
     &.checkbox {
       text-align: center;
+      display: table-cell;
+      min-height: 0;
+      margin-bottom: 0;
+      padding-left: 0;
       input {
         float: none !important;
         margin-left: 0 !important;
+      }
+      div.checkbox {
+        text-align: center;
+        min-height: 0;
+        margin-bottom: 0;
+        padding-left: 0;
       }
     }
   }
