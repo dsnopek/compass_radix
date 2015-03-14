@@ -49,3 +49,10 @@
     @warn "Breakpoint mixin supports: xs, sm, md, lg";
   }
 }
+
+// Font Awesome.
+// -----------------------------------------------------------------------------
+@mixin fa($icon) {
+  @extend .fa;
+  @extend .fa-#{$icon}
+}
