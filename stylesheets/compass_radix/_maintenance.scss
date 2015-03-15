@@ -1,4 +1,75 @@
 // Maintenance page
 // --------------------------------------------------
-.maintenance-page {
+body.maintenance-page {
+
+  // Navbar.
+  // --------------------------------------------------
+  .navbar-logo {
+    float: left;
+    height: 50px;
+    padding: 10px 0;
+    @include breakpoint(sm) {
+      margin-left: $grid-gutter-width / 2;
+      margin-right: $grid-gutter-width / 2;
+    }
+    img {
+      width: 30px;
+      height: auto;
+    }
+  }
+  .navbar-header {
+    float: left;
+    margin-left: 0;
+    @include breakpoint(sm) {
+      margin-left: - ($grid-gutter-width / 2);
+    }
+  }
+  .navbar-right {
+    float: right !important;
+    margin-right: 0;
+    @include breakpoint(sm) {
+      margin-right: - ($grid-gutter-width / 2);
+    }
+  }
+
+  #main {
+    @include breakpoint(md) {
+      padding-top: $grid-gutter-width;
+      padding-bottom: 50px;
+    }
+  }
+
+  // Tasks.
+  // --------------------------------------------------
+  .tasks-list {
+    > div {
+      margin-bottom: 25px;
+      border-left: 3px solid white;
+      padding-left: 20px;
+      h6 {
+        margin-bottom: 2px;
+      }
+      h4 {
+        margin-top: 0;
+      }
+      &.active {
+        border-left-color: black;
+      }
+      &.done {
+        border-left-color: rgba(black, 0.1);
+        @extend .text-muted;
+        @include opacity(0.5);
+      }
+    }
+  }
+
+  // Forms.
+  // --------------------------------------------------
+  .form-actions {
+    .btn {
+      &:first-child {
+        @extend .btn-primary;
+      }
+    }
+  }
 }
