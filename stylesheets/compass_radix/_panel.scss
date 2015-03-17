@@ -12,6 +12,23 @@
   display: none;
 }
 
+// Admin
+// --------------------------------------------------
+.panels-layouts-checkboxes {
+  // Undo default Radix styling so the radio button can appear above the layout.
+  input[type="radio"] {
+    position: static;
+    margin-left: 0px;
+    margin-bottom: 20px;
+  }
+  label {
+    margin-left: 0px;
+  }
+  .form-type-radio {
+    margin: 0 !important;
+  }
+}
+
 // IPE
 // --------------------------------------------------
 div#panels-ipe-control-container {
