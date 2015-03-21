@@ -44,21 +44,18 @@ body.maintenance-page {
   .tasks-list {
     > div {
       margin-bottom: 25px;
-      border-left: 3px solid white;
-      padding-left: 20px;
+      @extend .text-muted;
+      @include opacity(0.5);
       h6 {
         margin-bottom: 2px;
       }
       h4 {
         margin-top: 0;
       }
-      &.active {
-        border-left-color: black;
-      }
+      &.active,
       &.done {
-        border-left-color: rgba(black, 0.1);
-        @extend .text-muted;
-        @include opacity(0.5);
+        color: black;
+        @include opacity(1.0);
       }
     }
   }
