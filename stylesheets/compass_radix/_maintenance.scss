@@ -69,4 +69,19 @@ body.maintenance-page {
       }
     }
   }
+
+  // Theme selection form.
+  #panopoly-theme-selection-form {
+    .form-type-radio {
+      margin: 0 0 2em;
+      label {
+        display: block;
+      }
+      .form-radio {
+        margin: 0;
+        left: 0;
+        top: 40%;
+      }
+    }
+  }
 }
