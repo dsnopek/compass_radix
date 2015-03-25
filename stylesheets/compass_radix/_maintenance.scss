@@ -43,14 +43,16 @@ body.maintenance-page {
   // --------------------------------------------------
   .tasks-list {
     > div {
-      margin-bottom: 25px;
+      margin-bottom: 20px;
       @extend .text-muted;
       @include opacity(0.5);
       h6 {
         margin-bottom: 2px;
+        font-size: 12px;
       }
       h4 {
         margin-top: 0;
+        font-size: 15px;
       }
       &.active,
       &.done {
