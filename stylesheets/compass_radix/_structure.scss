@@ -1,6 +1,22 @@
 // Styles for Tabs, Messages, ..etc
 // --------------------------------------------------
 
+// Site name and logo
+// --------------------------------------------------
+#logo {
+  display: block;
+  float: left;
+  margin-right: $navbar-padding-horizontal;
+
+  // Resize the logo to fit the height of the navbar (which a child theme may
+  // change on the desktop).
+  height: 100%;
+  width: auto;
+}
+#site-name {
+  float: left;
+}
+
 // Page header
 // --------------------------------------------------
 .page-header {
